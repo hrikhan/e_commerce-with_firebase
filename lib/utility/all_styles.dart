@@ -11,7 +11,7 @@ class  allstyles{
   static final subtitlestyle=TextStyle(
       color: allcolors.black,
       fontSize: allsize.large,
-      fontWeight: FontWeight.bold
+     fontWeight: FontWeight.w600
 
   );
   static final  buttontext=TextStyle(
