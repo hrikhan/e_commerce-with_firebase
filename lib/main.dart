@@ -1,4 +1,5 @@
 import 'package:ecommerce_with_firebase/screen/Welcome_screen.dart';
+import 'package:ecommerce_with_firebase/screen/login.dart';
 import 'package:ecommerce_with_firebase/screen/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: WelcomeScreen(),
+      home:login(),
     );
   }
 }
