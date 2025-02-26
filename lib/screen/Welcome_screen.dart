@@ -1,8 +1,13 @@
+import 'package:ecommerce_with_firebase/main.dart';
+import 'package:ecommerce_with_firebase/screen/Register_page.dart';
+import 'package:ecommerce_with_firebase/screen/login.dart';
+import 'package:ecommerce_with_firebase/screen/splash_screen.dart';
 import 'package:ecommerce_with_firebase/utility/all_sizes.dart';
 import 'package:ecommerce_with_firebase/utility/all_styles.dart';
 import 'package:ecommerce_with_firebase/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce_with_firebase/utility/all_colors.dart';
+import 'package:get/get.dart';
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
 
@@ -40,11 +45,17 @@ class WelcomeScreen extends StatelessWidget {
 mainAxisAlignment:MainAxisAlignment.center,
 
                 children: [
-                  Custombutton(height: 65, width: 150, ontap:(){}, size: allsize.large, text:'LogIn', color:  allcolors.primarycolor, Textcolor: allcolors.white,),
+                  Custombutton(height: 65, width: 150, ontap:(){
+                   Get.to(login());
+
+                  }, size: allsize.large, text:'LogIn', color:  allcolors.primarycolor, Textcolor: allcolors.white,),
 
                   SizedBox(width: 30,),
 
-                  Custombutton(height: 65, width: 150, ontap:(){}, size: allsize.large, text:'Register',color: allcolors.secondarycolor,Textcolor: allcolors.black,),
+                  Custombutton(height: 65, width: 150, ontap:(){
+                    Get.to(RegisterPage());
+
+                  }, size: allsize.large, text:'Register',color: allcolors.secondarycolor,Textcolor: allcolors.black,),
                 ],
 
               ),

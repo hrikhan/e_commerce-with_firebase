@@ -1,8 +1,10 @@
+import 'package:ecommerce_with_firebase/screen/Welcome_screen.dart';
 import 'package:ecommerce_with_firebase/utility/all_colors.dart';
 import 'package:ecommerce_with_firebase/utility/all_sizes.dart';
 import 'package:ecommerce_with_firebase/utility/all_styles.dart';
 import 'package:ecommerce_with_firebase/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../widgets/Custom_textfeild.dart';
 
@@ -20,19 +22,24 @@ class login extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Container(
-                height: 80,
-                width: 80,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: allcolors.secondarycolor,
+              InkWell(
+                onTap: (){
+    Get.to(WelcomeScreen());
+                },
+                child: Container(
+                  height: 80,
+                  width: 80,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: allcolors.secondarycolor,
+                  ),
+                  child: Center(
+                      child: Icon(
+                    Icons.arrow_back,
+                    color: Colors.black,
+                    size: 40,
+                  )),
                 ),
-                child: Center(
-                    child: Icon(
-                  Icons.arrow_back,
-                  color: Colors.black,
-                  size: 40,
-                )),
               ),
               SizedBox(
                 height: 20,

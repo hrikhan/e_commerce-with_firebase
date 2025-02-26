@@ -11,7 +11,7 @@ class CustomTextfeild extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 50,
+      height: 56,
       width: allsize.fullwidth(context),
       decoration: BoxDecoration(
           color: allcolors.primarycolor.withOpacity(0.3),
