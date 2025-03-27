@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "400236783147",
+    "project_id": "hkecomm-5a354",
+    "storage_bucket": "hkecomm-5a354.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400236783147:android:1bc7272482463dfa36ec6e",
+        "android_client_info": {
+          "package_name": "com.example.ecommerce_with_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHBLBanwghXvsCUJh4z7fYz31Wq8k9lD8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

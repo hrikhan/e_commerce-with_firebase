@@ -1,3 +1,4 @@
+import 'package:ecommerce_with_firebase/buttom_navbar/bottomnavbar.dart';
 import 'package:ecommerce_with_firebase/screen/home_Screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -13,7 +14,7 @@ class ProfileSetupPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       resizeToAvoidBottomInset: false,
       body: Padding(
         padding: const EdgeInsets.only(top: 40, left: 10, right: 10),
@@ -31,10 +32,10 @@ class ProfileSetupPage extends StatelessWidget {
                 ),
                 child: Center(
                     child: Icon(
-                      Icons.arrow_back,
-                      color: Colors.black,
-                      size: 40,
-                    )),
+                  Icons.arrow_back,
+                  color: Colors.black,
+                  size: 40,
+                )),
               ),
               SizedBox(
                 height: 20,
@@ -60,34 +61,32 @@ class ProfileSetupPage extends StatelessWidget {
                     SizedBox(
                       height: 20,
                     ),
-                  Stack(
+                    Stack(
                       children: [
                         Container(
                           height: 120,
                           width: 120,
-                        decoration: BoxDecoration(
-                          border: Border.all(
-                            color: allcolors.primarycolor,
-                            width: 4
-                          ),
-                          color: allcolors.primarycolor,
-                            shape: BoxShape.circle
-
-                        ),
+                          decoration: BoxDecoration(
+                              border: Border.all(
+                                  color: allcolors.primarycolor, width: 4),
+                              color: allcolors.primarycolor,
+                              shape: BoxShape.circle),
                           alignment: Alignment.center,
                           child: CircleAvatar(
                             minRadius: 55,
-                            child: Icon(Icons.person,size: 100,),
+                            child: Icon(
+                              Icons.person,
+                              size: 100,
+                            ),
                           ),
                         ),
                         Positioned(
-                           bottom: 0,
+                            bottom: 0,
                             right: 0,
                             top: 70,
                             child: CircleAvatar(child: Icon(Icons.image)))
                       ],
                     )
-
                   ],
                 ),
               ),
@@ -108,36 +107,30 @@ class ProfileSetupPage extends StatelessWidget {
                     CustomTextfeild(
                       hintText: ' Address',
                     ),
-
                     SizedBox(
                       height: 20,
                     ),
                     CustomTextfeild(
                       hintText: ' Phone number',
                     ),
-
                     SizedBox(height: 30),
                     Custombutton(
                         height: 50,
                         width: allsize.fullwidth(context),
                         ontap: () {
-                          Get.to(HomeScreen());
-
+                          Get.to(Bottomnavbar());
                         },
                         size: allsize.large,
                         text: "Completed  Setup",
                         color: allcolors.primarycolor,
                         Textcolor: allcolors.white),
-
                   ],
                 ),
               ),
-
             ],
           ),
         ),
       ),
-
     );
   }
 }

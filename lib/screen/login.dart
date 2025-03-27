@@ -23,8 +23,8 @@ class login extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               InkWell(
-                onTap: (){
-    Get.to(WelcomeScreen());
+                onTap: () {
+                  Get.to(WelcomeScreen());
                 },
                 child: Container(
                   height: 80,
@@ -75,6 +75,7 @@ class login extends StatelessWidget {
                   children: [
                     CustomTextfeild(
                       hintText: ' Email',
+                      
                     ),
                     SizedBox(
                       height: 15,
@@ -99,16 +100,15 @@ class login extends StatelessWidget {
                         text: "Login",
                         color: allcolors.primarycolor,
                         Textcolor: allcolors.white),
-
                   ],
                 ),
               ),
               SizedBox(
-                height:25,
+                height: 25,
               ),
               Center(
                 child: InkWell(
-                  onTap: (){},
+                  onTap: () {},
                   child: Text(
                     'Create new account',
                     textAlign: TextAlign.end,

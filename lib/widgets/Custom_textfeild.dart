@@ -7,7 +7,6 @@ class CustomTextfeild extends StatelessWidget {
   const CustomTextfeild({super.key, required this.hintText});
   final String hintText;
 
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -15,21 +14,15 @@ class CustomTextfeild extends StatelessWidget {
       width: allsize.fullwidth(context),
       decoration: BoxDecoration(
           color: allcolors.primarycolor.withOpacity(0.3),
-          borderRadius: BorderRadius.circular(10)
-      ),
+          borderRadius: BorderRadius.circular(10)),
       child: TextField(
-
-        style: TextStyle(fontSize: 25),
+        style: TextStyle(fontSize: 20),
         decoration: InputDecoration(
             hintText: hintText,
-
-            enabledBorder:InputBorder.none,
+            enabledBorder: InputBorder.none,
             focusedBorder: OutlineInputBorder(
-               borderSide: BorderSide(color: allcolors.primarycolor),
-                borderRadius: BorderRadius.circular(10)
-            )
-
-        ),
+                borderSide: BorderSide(color: allcolors.primarycolor),
+                borderRadius: BorderRadius.circular(10))),
       ),
     );
   }
