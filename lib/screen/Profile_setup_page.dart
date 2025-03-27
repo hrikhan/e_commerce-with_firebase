@@ -1,4 +1,5 @@
 import 'package:ecommerce_with_firebase/buttom_navbar/bottomnavbar.dart';
+import 'package:ecommerce_with_firebase/controllars/auth_controllars.dart';
 import 'package:ecommerce_with_firebase/screen/home_Screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -10,7 +11,8 @@ import '../widgets/Custom_textfeild.dart';
 import '../widgets/custom_button.dart';
 
 class ProfileSetupPage extends StatelessWidget {
-  const ProfileSetupPage({super.key});
+  ProfileSetupPage({super.key});
+ 
 
   @override
   Widget build(BuildContext context) {
